@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0bd3f177d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/frontend/src/style.css" >
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/frontend/src/h.js" defer></script>
+    <title>Clima Web/App</title>
+</head>
+<body>
+    <h1>Clima</h1>
+        <div class="container">
+            <div class="entrada-clima">
+                <h3>Ingressar nombre de ciudad</h3>
+                <input class="city-input" type="text" placeholder="E.j., Santiago del Estero, Tucuman, Buenos Aires">
+                <button class="search-btn">Buscar</button>
+                <div class="separador"></div>
+                <button class="localizacion-btn">Usar Localizacón Actual</button>
+
+                <!-- crud-clima-barra -->
+                <form id="weatherForm">
+                    <input type="text" id="userNameInput" placeholder="Nombre de Usuario">
+                    <input type="text" id="provinceInput" placeholder="Nombre de la Provincia">
+                    <button type="button" id="guardarButton">Guardar</button>
+                </form>
+                
+            </div>      
+            <!-- class="img-5day" -->
+            <div class="informacin-clima">
+                <div class="clima-actual">
+                    <div class="detalle">
+                        <h2> __________ (__________)</h2>
+                        <h4>Temperatura: ______ °C</h4>
+                        <h4>Wind: ______ M/S</h4>
+                        <h4>Humedad: _____%</h4>
+                    </div>
+                    <!-- <div class="icono">
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="storm">
+                        <h4>Lluvia</h4>
+                    </div> -->
+                </div>
+                <div class="days-forescat">
+                    <h2>Clima de los siguientes 5 dias</h2>
+                    <ul class="weather-cards">
+                        <li class="card">
+                            <h2>(_________)</h2>
+                            <h4>Temperatura: ______ °C</h4>
+                            <h4>Wind: ______ M/S</h4>
+                            <h4>Humedad: _____%</h4>
+                        </li>
+                        <li class="card">
+                            <h2>(_________)</h2>
+                            <h4>Temperatura: ______ °C</h4>
+                            <h4>Wind: ______ M/S</h4>
+                            <h4>Humedad: _____%</h4>
+                        </li>
+                        <li class="card">
+                            <h2>(_________)</h2>
+                            <h4>Temperatura: ______ °C</h4>
+                            <h4>Wind: ______ M/S</h4>
+                            <h4>Humedad: _____%</h4>
+                        </li>
+                        <li class="card">
+                            <h2>(_________)</h2>
+                            <h4>Temperatura: ______ °C</h4>
+                            <h4>Wind: ______ M/S</h4>
+                            <h4>Humedad: _____%</h4>
+                        </li>
+                        <li class="card">
+                            <h2>(_________)</h2>
+                            <h4>Temperatura: ______ °C</h4>
+                            <h4>Wind: ______ M/S</h4>
+                            <h4>Humedad: _____%</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+       
+<div class="days-forescat">
+    <h2>Clima del dia actual guardados</h2>
+    <ul class="weather-cards-crud">
+        <li class="card">
+            <!-- 
+                Nombre del usuario que lo guardo
+                modificar el nombre de usuario que lo creo
+                actualizar el clima si hay conexion a internet
+                y eliminar el dia del clima guardado 
+             -->
+            <h1>[nombre de usuario que lo creo]</h1>
+            <h2>[nombre de la provincia]</h2>
+            <h4>Temperatura: [numero] °C</h4>
+            <h4>Wind: [numero]M/S</h4>
+            <h4>Humedad: [numero]%</h4>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
